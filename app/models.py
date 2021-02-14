@@ -1,3 +1,13 @@
 from django.db import models
 
-# Create your models here.
+class TeamTable(models.Model):
+    id = models.AutoField(primary_key=True)
+
+class PlayerTable(models.Model):
+    id = models.AutoField(primary_key=True)
+
+class BasicStatsTable(models.Model):
+    id = models.AutoField(primary_key=True)
+
+class AdvancedStatsTable(models.Model):
+    id = models.AutoField(primary_key=True)
